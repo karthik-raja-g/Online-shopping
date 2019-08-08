@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration">
+
+<hibernate-mapping>
+<class name = "model.User" table = "USER">
+
+<id name = "userId" type = "int" column = "ID">
+<generator class = "native"/>
+</id>
+
+<property name = "name" type = "string" column = "NAME"/>
+<property name = "userName" type = "string" column = "USERNAME"/>
+<property name = "password" type = "string" column = "PASSWORD"/>
+<property name = "email" type = "string" column = "EMAIL_ID"/>
+<property name = "phone" type = "long" column = "PHONE"/>
+<property name = "address" type = "string" column = "ADDRESS"/>
+<property name = "isActive" type = "boolean" column = "IS_ACTIVE" not-null = "true"/>
+<property name = "created" type = "string" column = "CREATED"/>
+<property name = "modified" type = "string" column = "MODIFIED"/>
+
+<set name = "roles" cascade = "save-update" table = "USER_ROLES">
+<key column = "USER_ID"/>
+<many-to-many column = "ROLE_ID" class = "model.Role"/>
+</set>
+
+</class>
+</hibernate-mapping>
+

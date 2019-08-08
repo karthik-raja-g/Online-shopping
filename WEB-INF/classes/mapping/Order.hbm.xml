@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configurationS">
+
+<hibernate-mapping>
+<class name = "model.Order" table = "USER_ORDER">
+
+<id name = "orderId" type = "int" column = "ID">
+<generator class = "native"/>
+</id>
+
+<many-to-one name = "user" class = "model.User" column = "USER_ID"/>
+
+<property name = "quantity" type = "int" column = "QUANTITY"/>
+<property name = "cost" type = "int" column = "COST"/>
+<property name = "status" type = "boolean" column = "STATUS"/>
+<property name = "createdDate" type = "string" column = "CREATED"/>
+<property name = "modifiedDate" type = "string" column = "MODIFIED"/>
+
+
+<set name = "orderDetails" cascade = "save-update" inverse ="true">
+<key column = "ORDER_ID" not-null ="true"/>
+<one-to-many class = "model.OrderDetails"/>
+</set>
+
+</class>
+</hibernate-mapping>
+

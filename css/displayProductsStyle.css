@@ -1,0 +1,131 @@
+        h4 {
+            font-weight:bold;
+        }
+        div.admin {
+            position:relative;
+            left: 150px;
+            top:-100px;
+         }
+
+        div.back-button {
+            position:relative;
+            left: 50px;
+            top:-160px;
+         }
+        div.home-button {
+            position:relative;
+            left: 700px;
+            top:-50px;
+         }
+        div.logout-button {
+            position:relative;
+            left: 1400px;
+            top:-201px;
+         }
+        /* header */
+        .border{
+            padding: 5px;
+	            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400% 400%;
+            height: 180px;
+            background-position: 25% 50%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 5s ease infinite;
+        }
+        .inner-cutout{
+            padding: 40px 0;
+            display: block;
+            background-color:#ff6f69;/*#ff6f69*/
+	            
+            margin: 2%;
+            padding-bottom: 40px;
+            height: 150px;
+            background: radial-gradient(#ff6f69, #ff8b87);
+             background-size: 300%;
+            background-position:50% 50%;
+
+        }
+        .knockout {
+            
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size:50pt;
+            color: blue;
+            color: #fff;
+            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400%;
+             -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+        .knockout{
+	            animation: Gradient 5s ease infinite;
+	            -webkit-animation: Gradient 15s ease infinite;
+	            -moz-animation: Gradient 5s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+	            background-position: 30% 50%
+            }
+            50% {
+	            background-position: 25% 50%
+            }
+            100% {
+	            background-position: 30% 50%
+            }
+            
+        }
+        .main{
+            width: 800px;
+            height: 180px;
+            position:relative;
+            left: 350px;
+            top: -30px;
+        }
+    /* Header */
+        .jumbotron {
+            background: #00cc99
+        }
+        div.inner {
+            border: 1px solid black;
+          display: table-row;
+          overflow: hidden;
+        }
+        .li-img {
+          display: table-cell;
+          vertical-align: middle;
+          width: 40%;
+          padding-right: 1em;
+            position:relative;
+            top:-20px;
+        }
+        .li-img img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        .li-text {
+          display: table-cell;
+          vertical-align: middle;
+          width: 70%;
+        }
+        .li-head {
+          margin: 0;
+        }
+        .li-sub {
+          margin: 0;
+        }
+
+        @media all and (min-width: 45em) {
+          .list li {
+            float: left;
+            width: 50%;
+          }
+        }
+
+        @media all and (min-width: 75em) {
+          .list li {
+            width: 33.33333%;
+          }
+        }

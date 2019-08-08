@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration">
+
+
+<hibernate-mapping>
+<class name = "model.OrderDetails" table = "ORDER_DETAILS">
+
+<id name = "Id" type = "int" column = "ID">
+<generator class = "native"/>
+</id>
+
+<many-to-one name = "order" class = "model.Order" column = "ORDER_ID" not-null = "true"/>
+<many-to-one name = "product" class = "model.Product" column = "PRODUCT_ID" not-null = "true"/>
+
+<property name = "quantity" type = "int" column = "QUANTITY"/>
+<property name = "price" type = "int" column = "PRICE"/>
+<property name = "prodName" type = "string" column = "PRODUCT_NAME"/>
+<property name = "totalPrice" type ="int" column = "TOTAL_PRICE"/>
+
+
+
+
+</class>
+</hibernate-mapping>
+

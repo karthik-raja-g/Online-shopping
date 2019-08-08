@@ -1,0 +1,109 @@
+        body {
+          background-image: url(https://images.pexels.com/photos/859895/pexels-photo-859895.jpeg?cs=srgb&dl=accessory-antique-assorted-859895.jpg&fm=jpg);
+    background-size: 1550px;
+        }
+            
+        h2 {
+          text-shadow: 2px 2px #FF0000;
+        }
+        #roleBox {
+          width:300px;
+          border: 1px solid;
+          padding: 10px;
+          box-shadow: 5px 10px 18px #262626;
+          background:#808080;
+
+        }
+        div.box {
+          position:relative;
+          left: 610px;
+          
+        }
+        div.back-button {
+            position:relative;
+            left: 50px;
+            top:-160px;
+         }
+        div.home-button {
+            position:relative;
+            left: 700px;
+            top:-50px;
+         }
+        div.logout-button {
+            position:relative;
+            left: 1400px;
+            top:-200px;
+         }
+        .jumbotron {
+            background: #00cc99
+        }
+        input[type=submit] {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        /* header */
+        .border{
+            padding: 5px;
+	            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400% 400%;
+            height: 180px;
+            background-position: 25% 50%;
+            -webkit-animation: Gradient 15s ease infinite;
+            -moz-animation: Gradient 5s ease infinite;
+        }
+        .inner-cutout{
+            padding: 40px 0;
+            display: block;
+            background-color:#ff6f69;/*#ff6f69*/
+	            
+            margin: 2%;
+            padding-bottom: 40px;
+            height: 150px;
+            background: radial-gradient(#ff6f69, #ff8b87);
+             background-size: 300%;
+            background-position:50% 50%;
+
+        }
+        .knockout {
+            
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size:50pt;
+            color: blue;
+            color: #fff;
+            background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+            background-size: 400%;
+             -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+        .knockout{
+	            animation: Gradient 5s ease infinite;
+	            -webkit-animation: Gradient 15s ease infinite;
+	            -moz-animation: Gradient 5s ease infinite;
+        }
+
+        @-webkit-keyframes Gradient {
+            0% {
+	            background-position: 30% 50%
+            }
+            50% {
+	            background-position: 25% 50%
+            }
+            100% {
+	            background-position: 30% 50%
+            }
+            
+        }
+        .main{
+            width: 500px;
+            height: 180px;
+            position:relative;
+            left: 500px;
+        }
+    /* Header */
